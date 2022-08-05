@@ -70,6 +70,10 @@
         padding: 1rem;
     }
 
+    .popup-box .popup-content{
+        width: calc(100% - 30px);
+    }
+
 
 
 }

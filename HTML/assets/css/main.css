@@ -415,6 +415,8 @@ header #menu-btn:hover{
     text-align: center;
     background-color: #222;
     padding: 2rem;
+    width: 100px;
+    height: 100px;
 }
 
 .counting .box .count{
@@ -426,6 +428,9 @@ header #menu-btn:hover{
 .counting .box h3{
     font-size: 1.8rem;
     color: var(--white);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .skill-container{
@@ -580,7 +585,110 @@ header #menu-btn:hover{
 
 /*--------------------- 6- Qualification Area CSS (End) ---------------------*/
 
+/*--------------------- Pop - up (Start) ---------------------*/
 
+.popup-box{
+    position: fixed;
+    height:100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 500;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.popup-box.open{
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup-box .popup-content{
+    background-color: #0b0b0b;
+    width: 600px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    /* box-shadow: -3px -3px 7px #efffff73, 3px 3px 5px rgba(94, 104, 121, .288); */
+    border: 0.2rem solid var(--purple);
+}
+
+.popup-box .popup-header{
+    padding: 15px;
+    border-bottom: 1px solid #dddddd;
+}
+
+.popup-box .popup-header h3{
+   margin: 0;
+   color: var(--purple);
+   font-size: 20px;
+}
+
+.popup-box .popup-header .popup-close-icon{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    color: var(--purple);
+    font-size: 28px;
+    line-height: 30 px;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    
+    
+ }
+ 
+ .popup-box .popup-footer .popup-close-btn{
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    color: var(--purple);
+    background-color: transparent;
+    border: 0.2rem solid var(--purple);
+    cursor: pointer;
+ }
+
+.popup-box .popup-body {
+    padding: 15px;
+    max-height: 300px;
+    overflow-y: auto;
+ }
+ .popup-box .popup-body p{
+    font-size: 16px;
+    color: var(--white);
+    margin: 0 0 15px;
+ }
+  
+.popup-box .popup-footer {
+    padding: 15px;
+    border-bottom: 1px solid #dddddd;
+    text-align: right;
+    border-radius: 5px;
+}
+
+.popup-box .popup-footer .btn{
+    padding: 8 15px;
+    border-bottom:1px solid #555555;
+    color: #555555;
+    font-size: 16px;
+    background-color: transparent;
+
+}
+
+.popup-box .popup-footer .btn:focus{
+    outline: none;
+
+}
+
+/* .experience .experience-item .content .read-more-content {
+    display: none
+} */
+/*--------------------- Pop - up (End) ---------------------*/
 
 /*--------------------- 7- Services Area CSS (Start) ---------------------*/
 .service .box-container{
@@ -921,6 +1029,8 @@ header #menu-btn:hover{
 
 .blog-item .content{
     padding: 2rem 1rem;
+    height: 200px;
+    width: 400px;
 }
 
 .blog-item .content .intro{
