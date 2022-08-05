@@ -21,6 +21,7 @@
     <!-- Custom Stylesheets -->
     <link rel="stylesheet"  href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
+    
 
 </head>
 <body>
@@ -35,7 +36,7 @@
         
 
     <!-------------------- Header Area (Start) -------------------->
-    <header class="header">
+    <header class="header sticky">
 
         <!-- Logo -->
         <a class="logo" href="#home">
@@ -46,13 +47,13 @@
 
         <!-- Navbar -->
         <nav class="navbar">
-            <a href="#Home">home</a>
-            <a href="#Sobre">Sobre</a>
+            <a href="#home">Home</a>
+            <a href="#about">Sobre</a>
             <!-- <a href="#service">service</a> -->
-            <a href="#portfolio">portfolio</a>
-            <a href="#referências">referências</a>
-            <a href="#linkedin">linkedin</a>
-            <a href="#contato">contato</a>
+            <a href="#service">Portfólio</a>
+            <a href="#testimonial">Referências</a>
+            <a href="#linkedin">Linkedin</a>
+            <a href="#contact">Contato</a>
         </nav>
 
         <!-- Menubar -->
@@ -60,7 +61,8 @@
         
     </header>
     <!-------------------- Header Area (End) -------------------->
- 
+    
+    
 
 
     <!-------------------- Home Area (Start) -------------------->
@@ -206,15 +208,13 @@
                 <div class="experience-item">
                     <i class="fas fa-graduation-cap"></i>
                     <div class="content">
-                        <span>2015 - 2016</span>
-                        <h3>engineering</h3>
-                        <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. 
-                            Vitae Vel Quasi Consectetur Expedita Ipsam Similique Maiores 
-                            Ipsa? Error, Debitis Ullam.</p>
+                        <span>2016 - 2021</span>
+                        <h3>Engenheiro de Produção</h3>
+                        <p>Graduado em Engenharia de Produção pela Universidade Prebisteriana Mackenzie - Presencial - Período Matutino/Noturno.</p>
                     </div>
                 </div>
     
-                <div class="experience-item">
+                <!-- <div class="experience-item">
                     <i class="fas fa-graduation-cap"></i>
                     <div class="content">
                         <span>2016 - 2017</span>
@@ -234,7 +234,7 @@
                             Vitae Vel Quasi Consectetur Expedita Ipsam Similique Maiores 
                             Ipsa? Error, Debitis Ullam.</p>
                     </div>
-                </div>
+                </div> -->
 
             </div>
 
@@ -243,33 +243,48 @@
                 <div class="experience-item">
                     <i class="fas fa-briefcase"></i>
                     <div class="content">
-                        <span>2018 - 2019</span>
-                        <h3>front-end development</h3>
-                        <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. 
-                            Vitae Vel Quasi Consectetur Expedita Ipsam Similique Maiores 
-                            Ipsa? Error, Debitis Ullam.</p>
+                        
+                        <span>2022 - 2022</span>
+                        <h3>Analista de Teste Pleno</h3>
+
+
+                        <p>- Atuo neste cargo desde Maio de 2022, com foco em testes automatizados, manuais, de carga e performance.</p> &nbsp
+                        <div class="service-items">
+                            <button class="btn" type="button">Mais informações</button>
+                        </div>
                     </div>
                 </div>
     
                 <div class="experience-item">
                     <i class="fas fa-briefcase"></i>
                     <div class="content">
-                        <span>2019 - 2020</span>
-                        <h3>front-end development</h3>
-                        <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. 
+                        <span>2022 - 2022</span>
+                        <h3>Analista de Teste Jr</h3>
+                        <!-- <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. 
                             Vitae Vel Quasi Consectetur Expedita Ipsam Similique Maiores 
-                            Ipsa? Error, Debitis Ullam.</p>
+                            Ipsa? Error, Debitis Ullam.</p> -->
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <i class="fas fa-briefcase"></i>
+                    <div class="content">
+                        <span>2020 - 2022</span>
+                        <h3>SW Quality Engineer Trainee</h3>
+                        <!-- <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. 
+                            Vitae Vel Quasi Consectetur Expedita Ipsam Similique Maiores 
+                            Ipsa? Error, Debitis Ullam.</p> -->
                     </div>
                 </div>
     
                 <div class="experience-item">
                     <i class="fas fa-briefcase"></i>
                     <div class="content">
-                        <span>2020 - 2021</span>
-                        <h3>front-end development</h3>
-                        <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. 
+                        <span>2020 - 2020</span>
+                        <h3>Software Quality Assurance (SQA) - IEL/CNPQ</h3>
+                        <!-- <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. 
                             Vitae Vel Quasi Consectetur Expedita Ipsam Similique Maiores 
-                            Ipsa? Error, Debitis Ullam.</p>
+                            Ipsa? Error, Debitis Ullam.</p> -->
                     </div>
                 </div>
     
@@ -280,51 +295,178 @@
 
     <!-------------------- Qualification Area (End) -------------------->
 
+    <!-------------------- Read more content (Start) -------------------->
 
+    <div class="popup-box">
+        <div class="popup-content">
+            <div class="popup-header">
+                <h3>Mais Informações</h3>
+                <span class="popup-close-icon">&times;</span>
+            </div>
+            <div class="popup-body">
+                <p>- Experiência no uso de ferramentas de gestão (Trello, Jira, etc.)<br/>
+                    - Aplicativos de teste de Performance (Jmeter)<br/>
+                    - Testes automatizados com Cypress<br/>
+                    - Testes automatizados em Microsserviços<br/>
+                    - Automação de testes de APIs REST<br/>
+                    - Conhecimento dos processos em BDD, utilizando Cucumber e Gherkin<br/>
+                    - Identificar e comunicar possíveis falhas, riscos e defeitos ao longo do processo;<br/>
+                    - Elaborar e implementar modelos e ferramentas de controle de qualidade, com foco na adoção de políticas e técnicas de melhoria contínua;<br/>
+                    - Validar o processo ao final de cada etapa com testes exploratórios, regressão ou requisitos.<br/>
+                    - Assegurar que o software corresponde às necessidades do cliente;<br/>
+                    - Criar casos de teste (manuais ou automatizados) e analisar resultados;<br/>
+                    - Reportar erros às equipes de desenvolvimento;<br/>
+                    - Ajudar a resolver problemas da equipe/cliente relacionados à qualidade do software;<br/>
+                    - Realizar testes pós-lançamento/pós-implementação;<br/>
+                    - Trabalhar com equipes multifuncionais para garantir a qualidade em todo o ciclo de vida de desenvolvimento de software.<br/>
+                    - Criar documentos de planejamento e gerenciamento, como plano de teste e relatório de falhas;<br/>
+                    - Utilizar a metodologia ágil Scrum como principal gestor do projeto.<br/>
+                    - Definir e executar processos de teste de QA ponta a ponta de funcionalidades e conteúdos;<br/>
+                    - Criar planos de teste e conduzir teste de regressão para o ciclo de lançamento;<br/>
+                    - Documentar e comunicar bugs e validar soluções;<br/>
+                    - Identificar e desenvolver oportunidades para testes de automação;<br/>
+                    - Priorizar bugs, analisando métricas.<br/>
+                    - Capacidade de documentar e comunicar bugs de forma clara;</p>
+                
+            </div>
+            <div class="popup-footer">
+                <button class="popup-close-btn">Close</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-------------------- Read more content (End) -------------------->
+
+    <!-------------------- Blog Area (Start) -------------------->
+    <section class="blog" id="blog">
+
+        <div class="heading">
+            <h2>Trabalho <span>Voluntário</span></h2>
+        </div>
+
+        <div class="swiper-container blog-slider">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide blog-item">
+                    <div class="image">
+                        <img src="assets/images/Blogs/blog-1.png" alt="Blog-Image" />
+                    </div>
+                    <div class="content">
+                        <div class="intro">
+                            <h5><i class="fas fa-calendar-alt"></i><span>jan, 2018</span></h5>
+                            
+                        </div>
+                        <a class="main-heading" href="#">Centro Acadêmico Marcel Mendes</a>
+                        <p>Por 4 anos fiz parte desse orgão estudantil, fui Assistente, Diretor e Presidente! Saudades dessa turma.
+                        </p>    
+                        
+                    </div>
+                </div>
+
+                <div class="swiper-slide blog-item">
+                    <div class="image">
+                        <img src="assets/images/Blogs/blog-2.png" alt="Blog-Image" />
+                    </div>
+                    <div class="content">
+                        <div class="intro">
+                            <h5><i class="fas fa-calendar-alt"></i><span>out, 2020</span></h5>
+                           
+                        </div>
+                        <a class="main-heading" href="#">IV Semana de Engenharia</a>
+                        <p>Fui Organizador da IV Semana de Engenhaira do Mackenzie Campinas, atuando como Auxiliar de Marketing do
+                            Centro Acadêmico Marcel Mendes no ano de 2018.
+                        </p>    
+                        
+                    </div>
+                </div>
+
+                <div class="swiper-slide blog-item">
+                    <div class="image">
+                        <img src="assets/images/Blogs/blog-3.png" alt="Blog-Image" />
+                    </div>
+                    <div class="content">
+                        <div class="intro">
+                            <h5><i class="fas fa-calendar-alt"></i><span> out, 2019</span></h5>
+                        </div>
+                        <a class="main-heading" href="#">V Semana de Engenharia</a>
+                        <p>Fui Organizador da V Semana de Engenhaira do Mackenzie Campinas, atuando como Presidente do
+                            Centro Acadêmico Marcel Mendes no ano de 2019.    
+                        </p>    
+                        
+                    </div>
+                </div>
+
+                <div class="swiper-slide blog-item">
+                    <div class="image">
+                        <img src="assets/images/Blogs/blog-4.png" alt="Blog-Image" />
+                    </div>
+                    <div class="content">
+                        <div class="intro">
+                            <h5><i class="fas fa-calendar-alt"></i><span>1st jan, 2022</span></h5>
+                        </div>
+                        <a class="main-heading" href="#">Recanto Lago dos Sonhos</a>
+                        <p>Fui monitor de recreação em 2019 no Recanto do Lago dos Sonhos.
+                        </p>    
+                
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="swiper-pagination swiper-pagination2"></div>
+
+        </div>
+
+    </section>
+    <!-------------------- Blog Area (End) -------------------->
 
     <!-------------------- Services Area (Start) -------------------->
      <section class="service" id="service">
+         
 
         <div class="heading">
-            <h2>my <span>services</span></h2>
+            <h2>Meu <span>Portfólio</span></h2>
         </div>
 
         <div class="box-container">
 
             <div class="service-item">
                 <i class="fas fa-code"></i>
-                <h3>web design</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                    Ex repellendus porro facilis.</p>
+                <h3>Cypress</h3>
+                <p>Em desenvolvimento....</p>
             </div>
 
             <div class="service-item">
-                <i class="fas fa-paint-brush"></i>
-                <h3>graphic design</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                    Ex repellendus porro facilis.</p>
+                <i class="fas fa-code"></i>
+                <h3>Jmeter</h3>
+                <p>Em desenvolvimento....</p>
             </div>
 
             <div class="service-item">
-                <i class="fas fa-camera"></i>
-                <h3>photography</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                    Ex repellendus porro facilis.</p>
+                <i class="fas fa-code"></i>
+                <h3>Automação REST/API</h3>
+                <p>Em desenvolvimento....</p>
             </div>
 
             <div class="service-item">
-                <i class="fas fa-bullhorn"></i>
-                <h3>digital marketing</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                    Ex repellendus porro facilis.</p>
+                <i class="fas fa-code"></i>
+                <h3>Estudo BDD</h3>
+                <p>Em desenvolvimento....</p>
             </div>
 
-            <div class="service-item">
+
+            <button class="btn" type="button">Acesse meu Gitlab</button>
+            <!-- <div class="service-item">
                 <i class="far fa-file-video"></i>
                 <h3>video editing</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                     Ex repellendus porro facilis.</p>
-            </div>
+            </div> -->
 
             <!-- <div class="service-item">
                 <i class="fas fa-search-dollar"></i>
@@ -341,7 +483,7 @@
 
 
     <!-------------------- Portfolio Area (Start) -------------------->
-    <section class="portfolio" id="portfolio">
+    <!-- <section class="portfolio" id="portfolio">
 
         <div class="heading">
             <h2>my <span>portfolio</span></h2>
@@ -415,7 +557,7 @@
     
         </div>
         
-    </section>
+    </section> -->
     <!-------------------- Portfolio Area (End) -------------------->
 
 
@@ -436,15 +578,12 @@
                     <i class="fas fa-quote-left"></i>
 
                     <p class="comment">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Voluptatum deleniti architecto harum natus aliquid nostrum 
-                        ad asperiores sequi, eligendi sint assumenda eum illo similique 
-                        repellendus.
+                       Um dia ele vai ser o "Maxiu git mother fucker squad father fucking tester senior leader" tenho certeza.
                     </p>
 
                     <div class="intro">
-                        <h3>jason roy</h3>
-                        <h5>web developer</h5>
+                        <h3>Maxiu</h3>
+                        <h5>QA Analyst</h5>
                     </div>
                 </div>
 
@@ -454,69 +593,13 @@
                     <i class="fas fa-quote-left"></i>
 
                     <p class="comment">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Voluptatum deleniti architecto harum natus aliquid nostrum 
-                        ad asperiores sequi, eligendi sint assumenda eum illo similique 
-                        repellendus.
+                        Eu sou flamenguista, mas admito que o palmeiras é o melhor time do
+                        Brasil e o primeiro Campeão Mundial.
                     </p>
 
                     <div class="intro">
-                        <h3>evelyn jones</h3>
-                        <h5>freelancer</h5>
-                    </div>
-                </div>
-
-                <div class="swiper-slide testi-item">
-                    <img src="assets/images/Testimonials/pic-3.png" alt="Testimonial-Pic" />
-
-                    <i class="fas fa-quote-left"></i>
-
-                    <p class="comment">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Voluptatum deleniti architecto harum natus aliquid nostrum 
-                        ad asperiores sequi, eligendi sint assumenda eum illo similique 
-                        repellendus.
-                    </p>
-
-                    <div class="intro">
-                        <h3>luke wood</h3>
-                        <h5>graphic designer</h5>
-                    </div>
-                </div>
-
-                <div class="swiper-slide testi-item">
-                    <img src="assets/images/Testimonials/pic-4.png" alt="Testimonial-Pic" />
-
-                    <i class="fas fa-quote-left"></i>
-
-                    <p class="comment">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Voluptatum deleniti architecto harum natus aliquid nostrum 
-                        ad asperiores sequi, eligendi sint assumenda eum illo similique 
-                        repellendus.
-                    </p>
-
-                    <div class="intro">
-                        <h3>sarah glenn</h3>
-                        <h5>freelancer</h5>
-                    </div>
-                </div>
-
-                <div class="swiper-slide testi-item">
-                    <img src="assets/images/Testimonials/pic-5.png" alt="Testimonial-Pic" />
-
-                    <i class="fas fa-quote-left"></i>
-
-                    <p class="comment">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Voluptatum deleniti architecto harum natus aliquid nostrum 
-                        ad asperiores sequi, eligendi sint assumenda eum illo similique 
-                        repellendus.
-                    </p>
-
-                    <div class="intro">
-                        <h3>samit patel</h3>
-                        <h5>graphic designer</h5>
+                        <h3>JJ</h3>
+                        <h5>QA Analyst</h5>
                     </div>
                 </div>
 
@@ -647,19 +730,13 @@
 
             <div class="contact-info">
 
-                <h3>get in touch</h3>
-
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h3>Entre em Contato</h3>
     
                 <div class="info-item">
                     <h4>Telefone:</h4>
                     <div class="detail">
                         <div class="fas fa-phone"></div>
-                        <p>+123-456-789</p>
-                    </div>
-                    <div class="detail">
-                        <div class="fas fa-phone"></div>
-                        <p>+111-222-333</p>
+                        <p>+5519994418898</p>
                     </div>
                 </div>
     
@@ -667,11 +744,11 @@
                     <h4>Email:</h4>
                     <div class="detail">
                         <div class="fas fa-envelope"></div>
-                        <p class="gmail">abc@gmail.com</p>
+                        <p class="gmail">henrique.souzacampos@hotmail.com</p>
                     </div>
                     <div class="detail">
                         <div class="fas fa-envelope"></div>
-                        <p class="gmail">xyz@gmail.com</p>
+                        <p class="gmail">henriquescamaral@hotmail.com</p>
                     </div>
                 </div>
 
@@ -679,23 +756,23 @@
                     <h4>linkedin:</h4>
                     <div class="detail">
                         <div class="fab fa-linkedin"></div>
-                        <p class="linkedin">https://www.linkedin.com/</p>
+                        <p class="linkedin">https://www.linkedin.com/in/henrique-amaral-fernandes-794477121/</p>
                     </div>
                 </div>
 
                 <div class="info-item">
-                    <h4>github:</h4>
+                    <h4>gitlab:</h4>
                     <div class="detail">
                         <div class="fab fa-github"></div>
-                        <p class="github">https://github.com/</p>
+                        <p class="github">https://gitlab.com/henriquescamaral/</p>
                     </div>
                 </div>
             </div>
     
             <form method="post" class="contact-form" id="contactUs-Form">
                     
-                <input type="text" name="name" class="box" id="Nome" placeholder="name" required />
-                <input type="email" name="email" class="box" id="Email" placeholder="email" required />
+                <input type="text" name="name" class="box" id="Nome" placeholder="Nome" required />
+                <input type="email" name="email" class="box" id="Email" placeholder="E-mail" required />
                 <input type="text" name="subject" class="box" id="subject" placeholder="Assunto" required />
                 <textarea cols="30" rows="10" name="comment" id="comment" class="box" placeholder="Mensagem"></textarea>
                 <button type="submit" class="btn" name="submit" id="submit">Envie uma mensagem</button>
@@ -713,15 +790,15 @@
 
     <!-------------------- Footer Area (Start) -------------------->
     <footer>
-        <div class="social">
+        <!-- <div class="social">
             <a href="#" class="fab fa-facebook-f"></a>
             <a href="#" class="fab fa-twitter"></a>
             <a href="#" class="fab fa-instagram"></a>
             <a href="#" class="fab fa-linkedin-in"></a>
-        </div>
+        </div> -->
 
         <div class="content">
-            <p>created by <span>AS_Designs</span> | all rights reserved</p>
+            <!-- <p>created by <span>AS_Designs</span> | all rights reserved</p> -->
         </div>
     </footer>
     <!-------------------- Footer Area (End) -------------------->

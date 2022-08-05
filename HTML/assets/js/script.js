@@ -8,6 +8,7 @@ $(document).ready(function(){
     $('.navbar').toggleClass('active');
   });
 
+
   /*--------------- Scroll-Top ---------------*/
   $(window).on('scroll',function(){
     
@@ -33,3 +34,26 @@ $(document).ready(function(){
 
 });
 
+  /*--------------- popup ---------------*/
+
+
+  const serviceItems = document.querySelector(".service-items")
+  const popup = document.querySelector(".popup-box")
+  const popupCloseBtn = popup.querySelector(".popup-close-btn");
+  const popupCloseIcon = popup.querySelector(".popup-close-icon");
+
+
+  serviceItems.addEventListener("click",function(event){
+  if(event.target.tagName.toLowerCase() == "button"){
+    popupBox();
+  }     
+   
+  })
+popupCloseBtn.addEventListener("click", popupBox)
+popupCloseIcon.addEventListener("click", popupBox)
+
+
+function popupBox(){
+  popup.classList.toggle("open");
+
+}
