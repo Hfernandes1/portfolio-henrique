@@ -23,7 +23,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 :root{
-    --purple: #BC8CF2;
+    --purple: #e369f0;
     --black: #000000;
     --white: #F7F5F2;
     --grey: #DFDFDE;
@@ -746,6 +746,13 @@ header #menu-btn:hover{
     color: var(--white);
 }
 
+.acesse-gitlab{
+    right: 0;
+    top: 0;
+    padding: 4rem 3rem;
+    text-align: center;
+}
+
 /*--------------------- 7- Services Area CSS (End) ---------------------*/
 
 
@@ -944,6 +951,7 @@ header #menu-btn:hover{
     position: relative;
     padding-bottom: 4rem;
     overflow: hidden;
+    
 }
 
 .testi-item{
@@ -951,6 +959,8 @@ header #menu-btn:hover{
     border: 0.1rem solid var(--grey);
     border-radius: 0.5rem;
     padding: 4rem 2rem;
+    height: 400px; 
+
 }
 
 .testi-item:hover{
@@ -969,6 +979,8 @@ header #menu-btn:hover{
     font-size: 3rem;
     color: var(--white);
     margin: 1rem 0;
+    
+    
 }
 
 .testi-item p{
