@@ -573,12 +573,13 @@
 
                     <i class="fas fa-quote-left"></i>
 
-                    <p class="comment">
-                       Um dia ele vai ser o "Maxiu git mother fucker squad father fucking tester senior leader" tenho certeza.
+                    <p class="comment"> 
+                       Desde que ingressou na empresa, vem se destacando e ganhando espaço.Tem evoluído o seu nível
+                       técnico e é um ótimo comunicador.
                     </p>
 
                     <div class="intro">
-                        <h3>Maxiu</h3>
+                        <h3>Matheus Machado Martins</h3>
                         <h5>QA Analyst</h5>
                     </div>
                 </div>
@@ -589,12 +590,12 @@
                     <i class="fas fa-quote-left"></i>
 
                     <p class="comment">
-                        Eu sou flamenguista, mas admito que o palmeiras é o melhor time do
-                        Brasil e o primeiro Campeão Mundial.
+                        O Henrique é um profissonal muito dedicado, aprende rápido e é responsável. Não tenho dúvidas
+                        que irá continuar se destacando em todos os desafios que almejar. 
                     </p>
 
                     <div class="intro">
-                        <h3>JJ</h3>
+                        <h3>João Junqueira</h3>
                         <h5>QA Analyst</h5>
                     </div>
                 </div>
@@ -781,17 +782,18 @@
                 </div>
             </div>
     
-            <form method="post" class="contact-form" id="contactUs-Form">
+            <form method="post" class="contact-form" id="form">
                     
                 <input type="text" name="name" class="box" id="Nome" placeholder="Nome" required />
                 <input type="email" name="email" class="box" id="Email" placeholder="E-mail" required />
                 <input type="text" name="subject" class="box" id="subject" placeholder="Assunto" required />
                 <textarea cols="30" rows="10" name="comment" id="comment" class="box" placeholder="Mensagem"></textarea>
-                <button type="submit" class="btn" name="submit" id="submit">Envie uma mensagem</button>
-                
+                <!-- <button type="submit" class="btn" name="submit" id="submit">Envie uma mensagem</button> -->
+                <input type="submit" id="button" value="Envie uma mensagem" >
                 <span class="alert" id="msg"></span>
                 
             </form>
+
             
         </div>
 
@@ -850,7 +852,7 @@
     </script>
 
     <!-- Contact-Form Script -->
-    <script>
+    <!-- <script>
         jQuery('#contactUs-Form').on('submit',function(e){
           jQuery('#msg').html('');
           jQuery('#submit').html('Please wait');
@@ -868,7 +870,17 @@
           });
           e.preventDefault();
         });
+    </script> -->
+
+
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+    emailjs.init('zrsT9gr6C10GiASQj')
     </script>
+
+    <script src="email.js"></script>
 
 </body>
 </html>
