@@ -1260,6 +1260,23 @@ header #menu-btn:hover{
     margin-top: 1rem;
 }
 
+  
+  input[type="submit"] {
+    display: block;
+
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    color: var(--purple);
+    background-color: transparent;
+    border: 0.2rem solid var(--purple);
+    
+  }
+
+  input:hover{
+    color: var(--white);
+    background-color: var(--purple);
+    cursor: pointer;
+}
 /*--------------------- 11- Contact Area CSS (End) ---------------------*/
 
 

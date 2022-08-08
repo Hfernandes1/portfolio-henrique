@@ -781,17 +781,18 @@
                 </div>
             </div>
     
-            <form method="post" class="contact-form" id="contactUs-Form">
+            <form method="post" class="contact-form" id="form">
                     
                 <input type="text" name="name" class="box" id="Nome" placeholder="Nome" required />
                 <input type="email" name="email" class="box" id="Email" placeholder="E-mail" required />
                 <input type="text" name="subject" class="box" id="subject" placeholder="Assunto" required />
                 <textarea cols="30" rows="10" name="comment" id="comment" class="box" placeholder="Mensagem"></textarea>
-                <button type="submit" class="btn" name="submit" id="submit">Envie uma mensagem</button>
-                
+                <!-- <button type="submit" class="btn" name="submit" id="submit">Envie uma mensagem</button> -->
+                <input type="submit" id="button" value="Envie uma mensagem" >
                 <span class="alert" id="msg"></span>
                 
             </form>
+
             
         </div>
 
@@ -850,7 +851,7 @@
     </script>
 
     <!-- Contact-Form Script -->
-    <script>
+    <!-- <script>
         jQuery('#contactUs-Form').on('submit',function(e){
           jQuery('#msg').html('');
           jQuery('#submit').html('Please wait');
@@ -868,7 +869,17 @@
           });
           e.preventDefault();
         });
+    </script> -->
+
+
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+    emailjs.init('zrsT9gr6C10GiASQj')
     </script>
+
+    <script src="email.js"></script>
 
 </body>
 </html>
