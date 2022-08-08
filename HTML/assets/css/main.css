@@ -23,7 +23,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 :root{
-    --purple: #e369f0;
+    --purple: #e369fe;
     --black: #000000;
     --white: #F7F5F2;
     --grey: #DFDFDE;
@@ -322,6 +322,8 @@ header #menu-btn:hover{
     flex-wrap: wrap;
     gap: 2rem;
     padding: 2rem 0;
+
+        
 }
 
 .about .image{
@@ -338,6 +340,7 @@ header #menu-btn:hover{
     -webkit-box-flex: 1;
     -ms-flex: 1 1 55rem;
         flex: 1 1 55rem;
+
 }
 
 .about .content h2{
@@ -366,12 +369,14 @@ header #menu-btn:hover{
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     gap: 1rem;
+    
 }
 
 .about .content .about-info .info{
     -webkit-box-flex: 1;
     -ms-flex: 1 1 15rem;
         flex: 1 1 15rem;
+    
 }
 
 .about .content .about-info .info h4{
@@ -415,14 +420,55 @@ header #menu-btn:hover{
     text-align: center;
     background-color: #222;
     padding: 2rem;
+    width: 120px;
+    height: 120px;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+    inset -5px -5px -5px rgba(255,255, 255, 0.1)
+    5px 5px 15px rgba(0, 0, 0, 0.3)
+    -5px -5px 15px rgba(255,255, 255, 0.1);
+    border-radius: 15px;
+}
+
+.counting .box .tooltip { /* Container for our tooltip */
+    position: relative;   
+    display: inline-block;
+}
+
+.counting .box .tooltip .fa-question-circle{ /* Container for our tooltip */
+    position: relative;   
+    display: inline-block;
+    display: block;
+    font-size: 3rem;
+    color: var(--purple);
+    margin: 1rem 0;
+    cursor: pointer;
+}
+
+.counting .box .tooltip .tooltiptext { /* This is for the tooltip text */
+    visibility: hidden;
     width: 100px;
-    height: 100px;
+    background-color: var(--purple);
+   color: var(--white);
+   text-align: center;
+   padding: 10px;
+   border-radius: 10px;  /* This defines tooltip text position */
+   position: absolute;
+   z-index: 1;
+   top: 0px;
+   left: 125%;
+   font-size: 1.5rem;
+   
+} 
+
+.counting .box .tooltip:hover .tooltiptext { /* Makes tooltip text visible when text is hovered on */
+   visibility: visible;
 }
 
 .counting .box .count{
     font-size: 3.5rem;
     color: var(--purple);
     padding-bottom: 0.5rem;
+    
 }
 
 .counting .box h3{
@@ -506,6 +552,8 @@ header #menu-btn:hover{
  .skill-item.item2 .box:nth-child(3) .progress-bar span{
     width:10%;
 }
+
+
 
 /*--------------------- 5- About Area CSS (End) ---------------------*/
 
