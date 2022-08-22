@@ -9,7 +9,7 @@ Utilizei HTML, CSS e JavaScipt para construir a página web baseada em um modelo
 ## Link :link:
 
 
-[curriculo-henrique-fernandes.netlify.app](curriculo-henrique-fernandes.netlify.app)
+<a href="https://curriculo-henrique-fernandes.netlify.app/" target="_blank">https://curriculo-henrique-fernandes.netlify.app/</a>
 
 
 
