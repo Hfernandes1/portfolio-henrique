@@ -135,7 +135,7 @@ section{
     display: inline-block;
     padding: 1rem 2rem;
     font-size: 1.8rem;
-    color: var(--pink);
+    color: var(--blue);
     background-color: transparent;
     border: 0.2rem solid var(--white);
 }
@@ -287,7 +287,7 @@ header #menu-btn:hover{
 .home .content h2{
     font-size: 2.5rem;
     font-weight: 400;
-    color: var(--pink);
+    color: var(--blue);
 }
 
 .home .content h1{
