@@ -23,7 +23,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 :root{
-    --purple: #BC8CF2;
+    /* --purple: #5d28fa;  */
+    --pink:#d400d4;
+    --blue: #00ccff;
+    --purple: linear-gradient(315deg, #00ccff, #d400d4);
     --black: #000000;
     --white: #F7F5F2;
     --grey: #DFDFDE;
@@ -71,7 +74,7 @@ section{
 
 ::-webkit-scrollbar-thumb{
     border-radius: 1rem;
-    background-color: var(--purple);
+    background-color: var(--blue);
 }
 
 ::-webkit-scrollbar-track{
@@ -87,7 +90,7 @@ section{
 
 .swiper-pagination-bullet-active{
     width: 3rem;
-    background: var(--purple);
+    background: var(--blue);
 }
 
 /*--------------------- 0- Global CSS (End) ---------------------*/
@@ -102,7 +105,7 @@ section{
 .heading h2{
     text-align: center;
     padding-bottom: 2rem;
-    color:var(--purple);
+    color:var(--blue);
     font-size: 4rem;
 }
 
@@ -117,7 +120,7 @@ section{
     position: absolute;
     bottom: -0.5rem; left: 0;
     z-index: -1;
-    background: var(--purple);
+    background: var(--pink);
     height: 0.2rem;
     width: 80%;
     margin-left: 10%;
@@ -132,9 +135,9 @@ section{
     display: inline-block;
     padding: 1rem 2rem;
     font-size: 1.8rem;
-    color: var(--purple);
+    color: var(--blue);
     background-color: transparent;
-    border: 0.2rem solid var(--purple);
+    border: 0.2rem solid var(--white);
 }
 
 .btn i{
@@ -143,7 +146,7 @@ section{
 
 .btn:hover{
     color: var(--white);
-    background-color: var(--purple);
+    background-color: var(--blue);
     cursor: pointer;
 }
 
@@ -183,7 +186,7 @@ header.sticky{
 header .logo h2{
     font-size: 2.5rem;
     font-weight: 900;
-    color: var(--purple);
+    color: var(--blue);
     text-transform: uppercase;
     letter-spacing: 0.2rem;
 }
@@ -196,7 +199,7 @@ header .navbar a{
 
 header .navbar a:hover,
 header .navbar a.active{
-    color: var(--purple);
+    color: var(--blue);
 }
 
 header #menu-btn{
@@ -216,7 +219,7 @@ header .fa-times{
 }
 
 header #menu-btn:hover{
-    color: var(--purple);
+    color: var(--pink);
 }
 
 /*--------------------- 3- Header Area CSS (End) ---------------------*/
@@ -284,7 +287,7 @@ header #menu-btn:hover{
 .home .content h2{
     font-size: 2.5rem;
     font-weight: 400;
-    color: var(--purple);
+    color: var(--blue);
 }
 
 .home .content h1{
@@ -295,7 +298,7 @@ header #menu-btn:hover{
 }
 
 .home .content h1 span{
-    color: var(--purple);
+    color: var(--blue);
 
 }
 
@@ -322,6 +325,8 @@ header #menu-btn:hover{
     flex-wrap: wrap;
     gap: 2rem;
     padding: 2rem 0;
+
+        
 }
 
 .about .image{
@@ -329,15 +334,19 @@ header #menu-btn:hover{
     text-align: center;
 }
 
+
 .about .image img{
     width: 100%;
-    border: 1rem solid var(--purple);
+    border: 0.3rem solid var(--blue);
+
+
 }
 
 .about .content{
     -webkit-box-flex: 1;
     -ms-flex: 1 1 55rem;
         flex: 1 1 55rem;
+
 }
 
 .about .content h2{
@@ -348,7 +357,7 @@ header #menu-btn:hover{
 
 .about .content > p{
     font-size: 1.6rem;
-    color: var(--grey);
+    color: var(--white);
     line-height: 1.6;
     padding-bottom: 1rem;
 }
@@ -366,12 +375,14 @@ header #menu-btn:hover{
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     gap: 1rem;
+    
 }
 
 .about .content .about-info .info{
     -webkit-box-flex: 1;
     -ms-flex: 1 1 15rem;
         flex: 1 1 15rem;
+    
 }
 
 .about .content .about-info .info h4{
@@ -415,14 +426,22 @@ header #menu-btn:hover{
     text-align: center;
     background-color: #222;
     padding: 2rem;
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+    inset -5px -5px -5px rgba(255,255, 255, 0.1)
+    5px 5px 15px rgba(0, 0, 0, 0.3)
+    -5px -5px 15px rgba(255,255, 255, 0.1);
+    border-radius: 15px;
+    
 }
 
 .counting .box .count{
     font-size: 3.5rem;
-    color: var(--purple);
+    color: var(--blue);
     padding-bottom: 0.5rem;
+    
+    
 }
 
 .counting .box h3{
@@ -431,7 +450,44 @@ header #menu-btn:hover{
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    
 }
+
+.counting .box .tooltip { /* Container for our tooltip */
+    position: relative;   
+    display: inline-block;
+}
+
+.counting .box .tooltip .fa-question-circle{ /* Container for our tooltip */
+    position: relative;   
+    display: inline-block;
+    display: block;
+    font-size: 3rem;
+    color: var(--blue);
+    margin: 1rem 0;
+    cursor: pointer;
+}
+
+.counting .box .tooltip .tooltiptext { /* This is for the tooltip text */
+    visibility: hidden;
+    width: 100px;
+    background-color: var(--blue);
+   color: var(--white);
+   text-align: center;
+   padding: 10px;
+   border-radius: 10px;  /* This defines tooltip text position */
+   position: absolute;
+   z-index: 1;
+   top: 0px;
+   left: 125%;
+   font-size: 1.5rem;
+   
+} 
+
+.counting .box .tooltip:hover .tooltiptext { /* Makes tooltip text visible when text is hovered on */
+   visibility: visible;
+}
+
 
 .skill-container{
     padding: 2rem 0;
@@ -507,6 +563,8 @@ header #menu-btn:hover{
     width:10%;
 }
 
+
+
 /*--------------------- 5- About Area CSS (End) ---------------------*/
 
 
@@ -539,7 +597,7 @@ header #menu-btn:hover{
     -ms-flex: 1 1 40rem;
         flex: 1 1 40rem;
     padding: 0 3rem 2rem 3rem;
-    border-left: 0.2rem solid var(--purple);
+    border-left: 0.2rem solid var(--blue);
     margin-left: 2rem;
 }
 
@@ -614,7 +672,7 @@ header #menu-btn:hover{
     transform: translate(-50%, -50%);
     border-radius: 5px;
     /* box-shadow: -3px -3px 7px #efffff73, 3px 3px 5px rgba(94, 104, 121, .288); */
-    border: 0.2rem solid var(--purple);
+    border: 0.2rem solid var(--blue);
 }
 
 .popup-box .popup-header{
@@ -624,7 +682,7 @@ header #menu-btn:hover{
 
 .popup-box .popup-header h3{
    margin: 0;
-   color: var(--purple);
+   color: var(--blue);
    font-size: 20px;
 }
 
@@ -633,7 +691,7 @@ header #menu-btn:hover{
     height: 30px;
     width: 30px;
     text-align: center;
-    color: var(--purple);
+    color: var(--blue);
     font-size: 28px;
     line-height: 30 px;
     right: 0;
@@ -647,9 +705,9 @@ header #menu-btn:hover{
     display: inline-block;
     padding: 1rem 2rem;
     font-size: 1.8rem;
-    color: var(--purple);
+    color: var(--blue);
     background-color: transparent;
-    border: 0.2rem solid var(--purple);
+    border: 0.2rem solid var(--white);
     cursor: pointer;
  }
 
@@ -722,11 +780,11 @@ header #menu-btn:hover{
 }
 
 .service-item:hover{
-    background-color: var(--purple);
+    background-color: var(--blue);
 }
 
 .service-item i{
-    color: var(--white);
+    color: var(--blue);
     font-size: 4rem;
 }
 
@@ -744,6 +802,13 @@ header #menu-btn:hover{
 
 .service-item:hover p{
     color: var(--white);
+}
+
+.acesse-gitlab{
+    right: 0;
+    top: 0;
+    padding: 4rem 3rem;
+    text-align: center;
 }
 
 /*--------------------- 7- Services Area CSS (End) ---------------------*/
@@ -774,7 +839,7 @@ header #menu-btn:hover{
 
 .controls .button.active{
     cursor: pointer;
-    background-color: var(--purple);
+    background-color: var(--pink);
     color: var(--white);
 }
 
@@ -828,7 +893,7 @@ header #menu-btn:hover{
 .portfolio-item .content h4{
     font-size: 2rem;
     font-weight: bold;
-    color: var(--purple);
+    color: var(--pink);
     transform-origin: top;
     -webkit-transform: translateY(-10rem);
             transform: translateY(-10rem);
@@ -856,7 +921,7 @@ header #menu-btn:hover{
 
 .portfolio-item .content .view-btn{
     font-size: 2rem;
-    color: var(--purple);
+    color: var(--blue);
     transform-origin: top;
     -webkit-transform: translateY(-10rem);
             transform: translateY(-10rem);
@@ -944,6 +1009,7 @@ header #menu-btn:hover{
     position: relative;
     padding-bottom: 4rem;
     overflow: hidden;
+    
 }
 
 .testi-item{
@@ -951,10 +1017,12 @@ header #menu-btn:hover{
     border: 0.1rem solid var(--grey);
     border-radius: 0.5rem;
     padding: 4rem 2rem;
+    height: 600px; 
+
 }
 
 .testi-item:hover{
-    border-color: var(--purple);
+    border-color: var(--blue);
 }
 
 .testi-item img{
@@ -969,6 +1037,8 @@ header #menu-btn:hover{
     font-size: 3rem;
     color: var(--white);
     margin: 1rem 0;
+    
+    
 }
 
 .testi-item p{
@@ -988,7 +1058,7 @@ header #menu-btn:hover{
 }
 
 .testi-item .intro h5{
-    color: var(--purple);
+    color: var(--blue);
     font-size: 1.4rem;
     font-weight: 400;
 }
@@ -1050,7 +1120,7 @@ header #menu-btn:hover{
 }
 
 .blog-item .content .intro h5 i{
-    color: var(--purple);
+    color: var(--blue);
     padding-right: 0.5rem;
 }
 
@@ -1081,7 +1151,7 @@ header #menu-btn:hover{
 /*--------------------- 11- Contact Area CSS (Start) ---------------------*/
 .contact .alert{
     font-size: 2rem;
-    color: var(--purple);
+    color: var(--blue);
     border-radius: 0.5rem;
     padding-left: 1rem;
 }
@@ -1145,7 +1215,7 @@ header #menu-btn:hover{
 .contact-info .info-item .detail .fas,
 .contact-info .info-item .detail .fab{
     border-radius: 50%;
-    color: var(--purple);
+    color: var(--pink);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;;
@@ -1199,13 +1269,30 @@ header #menu-btn:hover{
     margin-top: 1rem;
 }
 
+  
+  input[type="submit"] {
+    display: block;
+
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    color: var(--pink);
+    background-color: transparent;
+    border: 0.2rem solid var(--white);
+    
+  }
+
+  input:hover{
+    color: var(--white);
+    background-color: var(--blue);
+    cursor: pointer;
+}
 /*--------------------- 11- Contact Area CSS (End) ---------------------*/
 
 
 
 /*--------------------- 12- Footer Area CSS (Start) ---------------------*/
 footer{
-    background-color: var(--purple);
+    background-color: var(--pink);
     padding: 2rem 0;
     text-align: center;
 }
